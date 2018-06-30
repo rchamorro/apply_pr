@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 with open('requirements.txt', 'r') as f:
-    INSTALL_REQUIRES = f.readlines()
+    INSTALL_REQUIRES = f.read().splitlines()
 
 setup(
     name='apply_pr',
